@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>demo27</title>
+        <script>
+            // declaring an array using new keyword
+
+            const arr=new Array();    //size is optional
+            const n=parseInt(prompt("enter the size of the array:",1));
+            alert("reading the array elements");
+            for(let i=0;i<n;i++)
+            {
+                arr[i]=parseInt(prompt("enter the element"+(i+1)));
+            }
+            for(let elements of arr)
+            {
+                document.writeln(elements +"</br>")
+            }
+
+
+            const course=new Array("aws","mswd","psqt");
+            document.writeln("<ul>"+"course array length:"+course.length+"</br>");
+            document.writeln("course array length:"+typeof course+"</br>");
+            for(let c of course)
+            {
+                document.writeln(c+"</br>");
+            }
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>

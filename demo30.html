@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Demo30</title>
+        <script>
+          //map method
+          const arr=[23,24,45,67,89,61];
+          document.writeln("<u>"+arr.length+"</br>");
+
+         let output1= arr.map((Number)=>
+          {
+            document.writeln(Number*20);
+          })
+
+          document.writeln(output1);
+
+          const arr2 = [12, 34, 56, 78, 13, 14, 22];
+
+        let output2 = arr2.filter((element) => element % 2 == 0);
+        document.writeln("<br>");
+        document.writeln("Even numbers in the array2: " + output2);
+
+        const arr3 = [10, 20, 30, 40, 50];
+        const display = (sum, element) => 
+        sum= sum + element;
+
+        const output3 = arr3.reduce(display, 0);
+        document.writeln("output=" + output3);
+
+
+
+
+
+
+           
+           
+           
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>

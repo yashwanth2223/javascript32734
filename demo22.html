@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>demo22</title>
+        <script>
+            //PASSING ARRAY TO THE FUNCTION
+            function display(list)
+            {
+                let sum=0
+                for(let element of list)
+                {
+                    sum = sum + element
+                }
+                return sum
+            }
+            const arr=[10,20,30,40,50] //static array
+            document.writeln("Array="+arr+"<br>")
+            document.writeln("Sum="+display(arr))
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>

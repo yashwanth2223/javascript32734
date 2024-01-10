@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Demo32</title>
+        <script>
+    
+           
+           const person={
+            "id":101,
+            "name":"klu",
+            "age":30,
+            "place":"guntur",
+        }
+
+        document.writeln(typeof person+"</br>");
+        document.writeln(person.id+"</br>");
+        document.writeln(person.name+"</br>");
+        document.writeln(person.age+"</br>");
+        document.writeln(person.place+"</br>");
+
+        document.writeln(Object.keys(person)+"</br>");
+        document.writeln(Object.values(person)+"</br>");
+        document.writeln(Object.entries(person)+"</br>");
+
+
+        document.writeln("<u>person object keys</u></br>");
+        for(let key of Object.keys(person))
+        {
+            document.writeln(key+"</br>");
+        }
+
+        document.writeln("<u>person object values</u></br>");
+        for(let value of Object.values(person))
+        {
+            document.writeln(value+"</br>");
+        }
+
+
+        document.writeln("<u>person object keys&values</u></br>");
+        for(const [k,v] of Object.entries(person))
+        {
+            document.writeln(k,v+"</br>");
+        }
+
+        for(const key of Object.keys(person))
+        {
+            document.writeln(person[key]+"</br>");
+
+        }
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>

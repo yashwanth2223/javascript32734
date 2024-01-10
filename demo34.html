@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Demo32</title>
+        <script>
+    
+           
+       //object class &objects
+    //    class contains methods&properties
+       class person
+       {
+        setdata(id,name,status)
+        {
+            this.pid=id;    //pid,pname and pstatus are propreties
+            this.pname=name;
+            this.pstatus=status;
+        }
+        getdata()
+        {
+            document.writeln("person id="+this.pid);
+            document.writeln(this.pname);
+            document.writeln(this.pstatus);
+        }
+       }
+
+       let p1=new person();
+       p1.setdata(101,"alex",true);
+       p1.getdata();
+
+
+       let p2=new person();
+       p2.setdata(102,"paul",true);
+       p2.getdata();
+
+       document.writeln(p1.pid,p1.pname,p1.pstatus+"</br>");
+       document.writeln(p2.pid,p2.pname,p2.pstatus+"</br>");
+
+        
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>

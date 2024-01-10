@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Demo35</title>
+        <script>
+        // parameterised constructors
+            
+            class product
+            {
+                constructor(id,name,cat,cost)
+                {
+                    this.pid=id;
+                    this.pname=name;
+                    this.pcat=cat;
+                    this.pcost=cost;
+                }
+
+                display()
+                {
+                    document.writeln(this.pid);
+                    document.writeln(this.pname);
+                    document.writeln(this.pcat);
+                    document.writeln(this.pcost);
+
+                }
+            }
+
+            let p1=new product(101,"alex","edu",101);
+            let p2=new product();
+            let p3=new product();
+
+            p1.display();
+            
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body> 
+</html>
