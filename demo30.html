@@ -3,43 +3,51 @@
         <title>Demo30</title>
         <script>
           //map method
-          const arr=[23,24,45,67,89,61];
-          document.writeln("<u>"+arr.length+"</br>");
+        //   const arr=[23,24,45,67,89,61];
+        //   document.writeln("<u>"+arr.length+"</br>");
 
-         let output1= arr.map((Number)=>
-          {
-            document.writeln(Number*20);
-          })
+        //  let output1= arr.map((Number)=>
+        //   {
+        //     document.writeln(Number*20);
+        //   })
 
-          document.writeln(output1);
+        //   document.writeln(output1);
 
-          const arr2 = [12, 34, 56, 78, 13, 14, 22];
+        //   const arr2 = [12, 34, 56, 78, 13, 14, 22];
 
-        let output2 = arr2.filter((element) => element % 2 == 0);
-        document.writeln("<br>");
-        document.writeln("Even numbers in the array2: " + output2);
+        // let output2 = arr2.filter((element) => element % 2 == 0);
+        // document.writeln("<br>");
+        // document.writeln("Even numbers in the array2: " + output2);
 
-        const arr3 = [10, 20, 30, 40, 50];
-        const display = (sum, element) => 
-        sum= sum + element;
+        // const arr3 = [10, 20, 30, 40, 50];
+        // const display = (sum, element) => 
+        // sum= sum + element;
 
-        const output3 = arr3.reduce(display, 0);
-        document.writeln("output=" + output3);
+        // const output3 = arr3.reduce(display, 0);
+        // document.writeln("output=" + output3);
+</script>
+          const arr=[23,24,45,67,89,61];<br>
+          document.writeln(arr.length);<br>
 
+         let output1= arr.map((Number)=><br>
+          {<br>
+            document.writeln(Number*20);<br>
+          })<br>
 
+          document.writeln(output1);<br>
 
+          const arr2 = [12, 34, 56, 78, 13, 14, 22];<br>
 
+        let output2 = arr2.filter((element) => element % 2 == 0);<br>
+       
+        document.writeln("Even numbers in the array2: " + output2);<br>
 
+        const arr3 = [10, 20, 30, 40, 50];<br>
+        const display = (sum, element) => <br>
+        sum= sum + element;<br>
 
-           
-           
-           
-
-
-
-        </script>
+        const output3 = arr3.reduce(display, 0);<br>
+        document.writeln("output=" + output3);<br>
     </head>
-    <body>
-        
-    </body> 
+   
 </html>

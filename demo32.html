@@ -50,9 +50,49 @@
 
 
 
-        </script>
+        </script><br>
+         const person={<br>
+            "id":101,<br>
+            "name":"klu",<br>
+            "age":30,<br>
+            "place":"guntur",<br>
+        }<br>
+
+        document.writeln(typeof person);<br>
+        document.writeln(person.id);<br>
+        document.writeln(person.name);<br>
+        document.writeln(person.age);<br>
+        document.writeln(person.place);<br>
+
+        document.writeln(Object.keys(person));<br>
+        document.writeln(Object.values(person));<br>
+        document.writeln(Object.entries(person));<br>
+
+
+        document.writeln("person object keys");<br>
+        for(let key of Object.keys(person))<br>
+        {<br>
+            document.writeln(key);<br>
+        }<br>
+
+        document.writeln("person object values");<br>
+        for(let value of Object.values(person))<br>
+        {<br>
+            document.writeln(value);<br>
+        }<br>
+
+
+        document.writeln("person object keys&values");<br>
+        for(const [k,v] of Object.entries(person))<br>
+        {<br>
+            document.writeln(k,v);<br>
+        }<br>
+
+        for(const key of Object.keys(person))<br>
+        {<br>
+            document.writeln(person[key]);<br>
+
+        }<br>
     </head>
-    <body>
-        
-    </body> 
+   
 </html>

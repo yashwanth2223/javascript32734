@@ -4,6 +4,21 @@
         <script src="demo38.js"> </script>
     </head>
     <body>
-        
-    </body> 
+        let n = parseInt(prompt("Enter the input:", 0));<br>
+let digit = 0;<br>
+let sum = 0;<br>
+let originalN = n;<br>
+
+while (n !== 0) {<br>
+    digit = n % 10;<br>
+    sum = sum + Math.pow(digit, 3);<br>
+    n = parseInt(n / 10);<br>
+}<br>
+
+if (sum === originalN) {<br>
+    alert("it  is an armstrong number")<br>
+} else {<br>
+    alert("it  is  not an armstrong number");<br>
+}<br>
+    </body> <br>
 </html>

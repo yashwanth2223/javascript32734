@@ -4,31 +4,50 @@
         <script>
             // declaring an array using new keyword
 
-            const arr=new Array();    //size is optional
-            const n=parseInt(prompt("enter the size of the array:",1));
-            alert("reading the array elements");
-            for(let i=0;i<n;i++)
-            {
-                arr[i]=parseInt(prompt("enter the element"+(i+1)));
-            }
-            for(let elements of arr)
-            {
-                document.writeln(elements +"</br>")
-            }
+            // const arr=new Array();    //size is optional
+            // const n=parseInt(prompt("enter the size of the array:",1));
+            // alert("reading the array elements");
+            // for(let i=0;i<n;i++)
+            // {
+            //     arr[i]=parseInt(prompt("enter the element"+(i+1)));
+            // }
+            // for(let elements of arr)
+            // {
+            //     document.writeln(elements +"</br>")
+            // }
 
 
-            const course=new Array("aws","mswd","psqt");
-            document.writeln("<ul>"+"course array length:"+course.length+"</br>");
-            document.writeln("course array length:"+typeof course+"</br>");
-            for(let c of course)
-            {
-                document.writeln(c+"</br>");
-            }
+            // const course=new Array("aws","mswd","psqt");
+            // document.writeln("<ul>"+"course array length:"+course.length+"</br>");
+            // document.writeln("course array length:"+typeof course+"</br>");
+            // for(let c of course)
+            // {
+            //     document.writeln(c+"</br>");
+            // }
 
 
         </script>
-    </head>
-    <body>
+                    const arr=new Array();    //size is optional<br>
+                    const n=parseInt(prompt("enter the size of the array:",1));<br>
+                    alert("reading the array elements");<br>
+                    for(let i=0;i<n;i++)<br>
+                    {<br>
+                        arr[i]=parseInt(prompt("enter the element"+(i+1)));<br>
+                    }<br>
+                    for(let elements of arr)<br>
+                    {<br>
+                        document.writeln(elements +"</br>")<br>
+                    }<br>
         
-    </body> 
+        
+                    const course=new Array("aws","mswd","psqt");<br>
+                    document.writeln("course array length:"+course.length);<br>
+                    document.writeln("course array length:"+typeof course);<br>
+                    for(let c of course)<br>
+                    {<br>
+                        document.writeln(c);<br>
+                    }<br>
+    </head>
+
+    
 </html>

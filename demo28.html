@@ -3,54 +3,95 @@
         <title>Demo28</title>
         <script>
             // map object-key value player
-        const demomap=new Map();
-            demomap.set("id",123);
-            demomap.set("name","klu");
-            demomap.set("age",20.4);
-            demomap.set("status",false);
-            demomap.set("name","klef");   //klu will be updated as klef
+        // const demomap=new Map();
+        //     demomap.set("id",123);
+        //     demomap.set("name","klu");
+        //     demomap.set("age",20.4);
+        //     demomap.set("status",false);
+        //     demomap.set("name","klef");   //klu will be updated as klef
 
 
-            document.writeln("size of the map is "+demomap.size+"</br>");
-            document.writeln(demomap.get("id")+"</br>");
-            document.writeln(demomap.get("location")+"</br>");  //undefined
-            document.writeln(demomap.has("id")+"</br>");
-            document.writeln("deletion "+demomap.delete("status")+"</br>");
-            document.writeln("size of the map is "+demomap.size+"</br>");
-            document.writeln("</br>");
+        //     document.writeln("size of the map is "+demomap.size+"</br>");
+        //     document.writeln(demomap.get("id")+"</br>");
+        //     document.writeln(demomap.get("location")+"</br>");  //undefined
+        //     document.writeln(demomap.has("id")+"</br>");
+        //     document.writeln("deletion "+demomap.delete("status")+"</br>");
+        //     document.writeln("size of the map is "+demomap.size+"</br>");
+        //     document.writeln("</br>");
 
-            document.writeln("<u>display map keys</u></br>")
-                for(let key of demomap.keys())
-                {
-                    document.writeln("</br>");
-                    document.writeln(key+"</br>")
-                }
+        //     document.writeln("<u>display map keys</u></br>")
+        //         for(let key of demomap.keys())
+        //         {
+        //             document.writeln("</br>");
+        //             document.writeln(key+"</br>")
+        //         }
 
-                document.writeln("<u>display map values</u></br>")
-                for(let value of demomap.values())
-                {
-                    document.writeln("</br>");
-                    document.writeln(value+"</br>");
-                }
-                document.writeln("<u>display map keys</u></br>");
-                for(let k of demomap.keys())
-                {
-                    document.writeln("</br>");
-                    document.writeln(demomap.get(k))
-                }
-                document.writeln("</br>");
-                document.writeln("</br>");
-                document.writeln("<u>display map keys& values </u></br>");
-                for(let [k,v] of demomap.entries())
-                {
-                    document.writeln(k,v+"</br>");
-                }
-                demomap.clear();
-                document.writeln(demomap.size);
+        //         document.writeln("<u>display map values</u></br>")
+        //         for(let value of demomap.values())
+        //         {
+        //             document.writeln("</br>");
+        //             document.writeln(value+"</br>");
+        //         }
+        //         document.writeln("<u>display map keys</u></br>");
+        //         for(let k of demomap.keys())
+        //         {
+        //             document.writeln("</br>");
+        //             document.writeln(demomap.get(k))
+        //         }
+        //         document.writeln("</br>");
+        //         document.writeln("</br>");
+        //         document.writeln("<u>display map keys& values </u></br>");
+        //         for(let [k,v] of demomap.entries())
+        //         {
+        //             document.writeln(k,v+"</br>");
+        //         }
+        //         demomap.clear();
+        //         document.writeln(demomap.size);
 
         </script>
-    </head>
-    <body>
+        const demomap=new Map();<br>
+        demomap.set("id",123);<br>
+        demomap.set("name","klu");<br>
+        demomap.set("age",20.4);<br>
+        demomap.set("status",false);<br>
+        demomap.set("name","klef");   //klu will be updated as klef<br>
+
+
+        document.writeln("size of the map is "+demomap.size);<br>
+        document.writeln(demomap.get("id"));<br>
+        document.writeln(demomap.get("location"));  //undefined<br>
+        document.writeln(demomap.has("id"));<br>
+        document.writeln("deletion "+demomap.delete("status"))<br>;
+        document.writeln("size of the map is "+demomap.size);<br>
         
-    </body> 
+
+        document.writeln("<u>display map keys</u>)<br>
+            for(let key of demomap.keys())<br>
+            {<br>
+              
+                document.writeln(key)<br>
+            }<br>
+
+            document.writeln("<u>display map values</u>)<br>
+            for(let value of demomap.values())<br>
+            {<br>
+                
+                document.writeln(value);<br>
+            }<br>
+            document.writeln("display map keys);<br>
+            for(let k of demomap.keys())<br>
+            {<br>
+                
+                document.writeln(demomap.get(k))<br>
+            }<br>
+           
+            document.writeln("display map keys& values");<br>
+            for(let [k,v] of demomap.entries())<br>
+            {<br>
+                document.writeln(k,v);<br>
+            }<br>
+            demomap.clear();<br>
+            document.writeln(demomap.size);<br>
+    </head>
+    
 </html>

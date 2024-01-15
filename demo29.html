@@ -3,30 +3,30 @@
         <title>Demo29</title>
         <script>
            //map object-for each method
-           const mapobj1=new Map();
-           mapobj1.set(1,101);
-           mapobj1.set("id",1234);
-           mapobj1.set("name","klu");
+        //    const mapobj1=new Map();
+        //    mapobj1.set(1,101);
+        //    mapobj1.set("id",1234);
+        //    mapobj1.set("name","klu");
 
-           document.writeln("map object 1 size="+mapobj1.size+"</br>");
-           document.writeln("<u>MAP object 1 values</u></br>");
-           mapobj1.forEach((value)=>document.writeln(value+"</br>"));
-           document.writeln("<u>MAP object 1 keys and values</u></br>");
-           mapobj1.forEach((value,key)=>
-           {document.writeln(key+":"+value)}
-           );
+        //    document.writeln("map object 1 size="+mapobj1.size+"</br>");
+        //    document.writeln("<u>MAP object 1 values</u></br>");
+        //    mapobj1.forEach((value)=>document.writeln(value+"</br>"));
+        //    document.writeln("<u>MAP object 1 keys and values</u></br>");
+        //    mapobj1.forEach((value,key)=>
+        //    {document.writeln(key+":"+value)}
+        //    );
 
-           const mapobj2=new Map([  ["id","101"],["name","klu"] ]);
-           document.writeln("</br>");
-           document.writeln("map object 1 size="+mapobj2.size+"</br>");
-           document.writeln("<u>MAP object 2 values</u></br>");
-           mapobj2.forEach((value)=>document.writeln(value+"</br>"));
-           document.writeln("<u>MAP object 2 keys and values</u></br>");
-           let display=(a,b)=>
-           {
-            document.writeln(b+":"+a);
-           }
-           mapobj2.forEach(display);   //call back function and foreach is a fucntion call
+        //    const mapobj2=new Map([  ["id","101"],["name","klu"] ]);
+        //    document.writeln("</br>");
+        //    document.writeln("map object 1 size="+mapobj2.size+"</br>");
+        //    document.writeln("<u>MAP object 2 values</u></br>");
+        //    mapobj2.forEach((value)=>document.writeln(value+"</br>"));
+        //    document.writeln("<u>MAP object 2 keys and values</u></br>");
+        //    let display=(a,b)=>
+        //    {
+        //     document.writeln(b+":"+a);
+        //    }
+        //    mapobj2.forEach(display);   //call back function and foreach is a fucntion call
            
            
            
@@ -34,6 +34,30 @@
 
 
         </script>
+          const mapobj1=new Map();<br>
+          mapobj1.set(1,101);<br>
+          mapobj1.set("id",1234);<br>
+          mapobj1.set("name","klu");<br>
+
+          document.writeln("map object 1 size="+mapobj1.size);<br>
+          document.writeln("<u>MAP object 1 values</u>);<br>
+          mapobj1.forEach((value)=>document.writeln(value));<br>
+          document.writeln("<u>MAP object 1 keys and values</u>);<br><br>
+          mapobj1.forEach((value,key)=><br>
+          {document.writeln(key+":"+value)}<br>
+          );<br>
+
+          const mapobj2=new Map([  ["id","101"],["name","klu"] ]);<br>
+          document.writeln("</br>");<br>
+          document.writeln("map object 1 size="+mapobj2.size);<br>
+          document.writeln("<u>MAP object 2 values</u>);<br>
+          mapobj2.forEach((value)=>document.writeln(value));<br>
+          document.writeln("<u>MAP object 2 keys and values</u>);<br>
+          let display=(a,b)=><br>
+          {<br>
+           document.writeln(b+":"+a);<br>
+          }<br>
+          mapobj2.forEach(display);<br>
     </head>
     <body>
         
